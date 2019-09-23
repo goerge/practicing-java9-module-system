@@ -196,7 +196,7 @@ In this practice, you are going to play with ``exports`` and ``requires`` keywor
 
 Case 1:: When exports and requires are not declared in module descriptor.
 
-Open `module-core` directory, and check that `printer-client/module-info.java` doesn't include `requires` and `printer-impl/module-info.java` doesn't include `exports` keywords.
+Open `module-core` directory, and check that `printer-client/src/module-info.java` doesn't include `requires` and `printer-impl/src/module-info.java` doesn't include `exports` keywords.
 
 Compile printer-impl and printer-client modules, and log that how Java module system prevents access when `exports` and `requires` are missed.
 
@@ -214,9 +214,9 @@ import com.printer.impl.Printer;
 
 Case2:: When exports declared, but requires is not declared
 
-Update `printer-impl/module-info.java` descriptor file to export `com.printer.impl` package to other modules.
+Update `printer-impl/src/module-info.java` descriptor file to export `com.printer.impl` package to other modules.
 
-.printer-impl/module-info.java
+.printer-impl/src/module-info.java
 [source,java]
 ----
 module com.printer.impl {
@@ -240,9 +240,9 @@ import com.printer.impl.Printer;
 
 Case 3:: When requires declared, but exports is not declared
 
-Update `printer-impl/module-info.java` descriptor file to not export any package, and update `printer-client/module-info.java` to require printer-impl module.
+Update `printer-impl/src/module-info.java` descriptor file to not export any package, and update `printer-client/src/module-info.java` to require printer-impl module.
 
-.printer-impl/module-info.java
+.printer-impl/src/module-info.java
 [source,java]
 ----
 module com.printer.impl {
@@ -250,7 +250,7 @@ module com.printer.impl {
 }
 ----
 
-.printer-client/module-info.java
+.printer-client/src/module-info.java
 [source,java]
 ----
 module com.printer.client {
@@ -274,7 +274,7 @@ import com.printer.impl.Printer;
 
 Case 4:: When both requires and exports are declared
 
-Update `printer-impl/module-info.java` descriptor file to export `com.printer.impl` package, and update `printer-client/module-info.java` to require `com.printer.impl` module.
+Update `printer-impl/src/module-info.java` descriptor file to export `com.printer.impl` package, and update `printer-client/src/module-info.java` to require `com.printer.impl` module.
 
 include::__STANDARD_PRINTER_COMPILE.adoc[]
 
@@ -299,7 +299,7 @@ All packages of an auto-module are readable by other modules.
 
 Open `auto-module` directory, and check that there is a non-modular ``jansi-1.17.1.jar`` file. Then, edit module descriptors for both ``printer-client`` and ``printer-impl`` modules.
 
-.printer-client/module-info.java
+.printer-client/src/module-info.java
 [source,java]
 ----
 module com.printer.client {
@@ -307,7 +307,7 @@ module com.printer.client {
 }
 ----
 
-.printer-impl/module-info.java
+.printer-impl/src/module-info.java
 [source,java]
 ----
 module com.printer.impl {
@@ -340,9 +340,9 @@ public class Printer {
 .Compile modules
 [source,bash]
 ----
-javac printer-impl/module-info.java printer-impl/src/com/printer/impl/Printer.java -p lib -d dist/printer-impl
+javac printer-impl/src/module-info.java printer-impl/src/com/printer/impl/Printer.java -p lib -d dist/printer-impl
 
-javac printer-client/module-info.java printer-client/src/com/printer/client/PrinterClient.java -p dist/printer-impl;lib -d dist/printer-client
+javac printer-client/src/module-info.java printer-client/src/com/printer/client/PrinterClient.java -p dist/printer-impl;lib -d dist/printer-client
 ----
 
 .Run modules
@@ -361,7 +361,7 @@ Open `unnamed-module` folder, and check that `printer-client` module doesn't hav
 
 [source,bash]
 ----
-javac printer-impl/module-info.java printer-impl/src/com/printer/impl/Printer.java -d dist/printer-impl <1>
+javac printer-impl/src/module-info.java printer-impl/src/com/printer/impl/Printer.java -d dist/printer-impl <1>
 
 javac printer-client/src/com/printer/client/PrinterClient.java -p dist/printer-impl --add-modules c
 om.printer.impl -d dist/printer-client <2>

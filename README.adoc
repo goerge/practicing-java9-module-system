@@ -23,6 +23,8 @@ https://docs.google.com/presentation/d/1nZpErxa8OC3_uaKBX4sCDUryLTz5FS7aXmnvydLY
 
 == *Practice 1*: Generate JREs
 
+Slide 9
+
 JLink tool allows you to create different scale of JREs. Every application has different scale, and it is not required to use a module that we don't need!
 
 [source,bash]
@@ -37,6 +39,8 @@ generate-images.bat or ./generate-images.sh
 After generation is completed, verify that you have ``java.base``, ``java.desktop``, ``java.se``, and ``java.se.ee`` included JREs in the directory. Check folder sizes (with ``du -sh``) and add them to your notepad.
 
 == *Practice 2*: Create a hello world module
+
+Slides 10-15
 
 Create a "Hello world!" module. Compile, Package, and Run it.
 
@@ -154,6 +158,8 @@ bin\hello.bat <1>
 Check out the ``hello`` executable.
 
 == *Practice 3*: Control access between modules
+
+Slides 16-22
 
 Let's use `exports` and `requires` keywords to control *access* between modules.
 
@@ -288,6 +294,8 @@ Success
 
 == *Practice 4*: Using Auto-modules
 
+Slides 23-25
+
 Auto-modules is designed for smooth migration to the Java module system.
 
 When a non-modular classic JAR file is added to module path (``--module-path`` or ``-p``), then it becomes an auto-module.
@@ -354,6 +362,8 @@ java --module-path dist;lib -m com.printer.client/com.printer.client.PrinterClie
 After compile, run the auto-module app, verify that console output is coloured with jansi library.
 
 == *Practice 5*: Using Unnamed modules
+
+Slides 26-27
 
 In this practice, you are going to test access from an unnamed module to a module.
 

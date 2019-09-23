@@ -1,5 +1,7 @@
 *Practice 6*
 
+Slides 28-31
+
 If a module want to access to other module's components, other module have to open or export required packages to caller module.
 
 exports:: Makes packages accessible to other modules at compile time or run time.

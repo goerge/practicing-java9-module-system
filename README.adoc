@@ -5,7 +5,7 @@
 :toc: left
 :force-include:
 
-To start hands-on lab session, first you should clone the https://github.com/rahmanusta/practicing-java9-module-system[repository] or download the zipped version here https://github.com/rahmanusta/practicing-java9-module-system/archive/master.zip
+To start hands-on lab session, first you should clone the https://github.com/codecop/practicing-java9-module-system[repository] or download the zipped version here https://github.com/codecop/practicing-java9-module-system/archive/codecop.zip
 
 [NOTE]
 ====

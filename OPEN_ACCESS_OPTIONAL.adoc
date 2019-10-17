@@ -1,4 +1,4 @@
-*Practice 6*
+== *Practice 6*: Reflection
 
 If a module want to access to other module's components, other module have to open or export required packages to caller module.
 

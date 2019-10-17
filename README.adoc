@@ -9,7 +9,7 @@ To start hands-on lab session, first you should clone the https://github.com/cod
 
 [NOTE]
 ====
-. Attendees who want to practice should install required tools in advance link:WORKSHOP_REQUIREMENTS[] .
+. Attendees who want to practice should install required tools in advance link:WORKSHOP_REQUIREMENTS.adoc[] .
 
 . It is an open workshop, you can hold an event in your user group or company.
 ====
@@ -380,6 +380,10 @@ java --module-path dist --add-modules com.printer.impl <1>
 <2> ``printer-client`` is added to classpath
 
 // include::OPEN_ACCESS_OPTIONAL.adoc[]
+
+== *Practice 6*: Reflection
+
+See link:OPEN_ACCESS_OPTIONAL.adoc[]
 
 The end.
 

@@ -35,13 +35,13 @@ I saw in the previous practices, some attendees checked `java -version` but not 
 
 Set JAVA_HOME system variable properly or use direct path where it is used. We use it in the generate-image scripts. It is also suggested to not have space in the jdk path like 'Program Files'.
 
-3) Your favorite text editor
+4) Your favourite text editor
 
-Sublime, Atom, Notepad++, or any that you are comfortable with it. Some examples includes maven projects, but you don't need to install maven thanks to the maven wrapper.
+Sublime, Atom, Notepad++, or any that you are comfortable with it. Some examples include Maven projects, but you don't need to install Maven thanks to the Maven wrapper.
 
-4) Watch the repository so you will be notified with repository updates ;)
+5) Watch the repository so you will be notified with repository updates ;)
 
-5) Any contribution is welcomed, don't be shy for pull requests :)
+6) Any contribution is welcomed, don't be shy for pull requests :)
 
 See you!
 Rahman

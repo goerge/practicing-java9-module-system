@@ -27,7 +27,6 @@ JLink tool allows you to create different scale of JREs. Every application has d
 
 [source,bash]
 ----
-mkdir generate-image
 cd generate-image
 
 // Run

@@ -43,12 +43,12 @@ Create a "Hello world!" module. Compile, Package, and Run it.
 
 [tree]
 ----
-#hello-world
-##src
-###module-info.java
-###com
-####foo
-#####Hello.java
+hello-world
+└── src
+    ├── module-info.java
+    └── com
+        └── foo
+            └── Hello.java
 ----
 
 .module-info.java
@@ -87,12 +87,12 @@ After compilation, ``hello-world/dist`` folder should include compiled module de
 
 [tree]
 ----
-#hello-world
-##dist
-###module-info.class
-###com
-####foo
-#####Hello.class
+hello-world
+└── dist
+    ├── module-info.class
+    └── com
+        └── foo
+            └── Hello.class
 ----
 
 3) Run the module with ``dist`` folder
@@ -167,26 +167,26 @@ requires:: declares which module(s) are needed to read/access.
 
 [tree]
 ----
-#printer-client
-##src
-###module-info.java
-###com
-####printer
-#####client
-######PrinterClient.java
+printer-client
+└── src
+    ├── module-info.java
+    └── com
+        └── printer
+            └── client
+                └── PrinterClient.java
 ----
 
 |
 
 [tree]
 ----
-#printer-impl
-##src
-###module-info.java
-###com
-####printer
-#####impl
-######Printer.java
+printer-impl
+└── src
+    ├── module-info.java
+    └── com
+        └── printer
+            └── impl
+                └── Printer.java
 ----
 
 |====================
